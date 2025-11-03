@@ -50,3 +50,12 @@
 * Definir o algoritmo de Machine Learning é uma etapa importante. Como queremos uma previsão dos valores de aluguel, vamos utilizar modelos de Machine Learning de Regressão.
   - Aqui foram testados três tipos: Árvore de Decisão por Regressão, Regressão Linear e RandomForest por Regressão
   - O modelo escolhido foi baseado na métrica *Mean Absolute Error*, tentando entender o quanto o modelo estava errando. O modelo escolhido foi *RandomForest por Regressão*
+ 
+---
+
+<a id='producao'></a>
+## Modelo em produção
+
+* Por fim, utilizou-se a biblioteca *joblib* para colocar o algoritmo do modelo de Machine Learning em produção
+  - Há uma base de teste **producao.csv** que foi utilizado com o regressor gerado.
+  - **producao.ipynb** considera essa nova base para testarmos a produção do modelo e gera uma predição de valores do aluguel em **producao_com_previsao.xlsx**
